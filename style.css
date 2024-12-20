@@ -43,7 +43,7 @@ input {
   width: 270px;
 }
 
-.textArea {
+#textArea {
   padding: 12px 8px;
 }
 
@@ -54,4 +54,29 @@ input {
   border-radius: 12px;
   background: peru;
   cursor: pointer;
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 99;
+  right: 50px;
+  top: 30px;
+  font-size: 17px;
+  box-shadow: 0 0 4px 4px rgba(179, 192, 3, 0.8);
+  opacity: 0;
+  transition: opacity 5s, bottom 0.5s;
+}
+
+#toast.show {
+  visibility: visible;
+  opacity: 1;
+  bottom: 50px;
 }

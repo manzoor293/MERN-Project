@@ -10,28 +10,29 @@
 <body>
   <!-- This is Form Validation Project where we will store User Data in DataBase -->
    <div class="container m-auto h-screen flex items-center justify-center">
-    <form>
+    <form id="userForm">
       <label for="FName">First Name:</label>
-      <input type="text" name="FName" required>
+      <input type="text" name="FName" id="FName" required>
 
       <label for="LName">Last Name:</label>
-      <input type="text" name="LName" required>
+      <input type="text" name="LName" id="LName" required>
 
       <label for="Email">Email:</label>
-      <input type="text" name="Email" required>
+      <input type="text" name="Email" id="Email" required>
 
       <label for="Phone">Phone No:</label>
-      <input type="number" name="Phone" required>
+      <input type="number" name="Phone" id="Phone" required>
 
       <label for="DOB">DOB:</label>
-      <input type="date" name="DOB" required>
+      <input type="date" name="DOB" id="DOB" required>
 
       <label for="address">Address:</label>
-      <textarea name="" id="" class="textArea"></textarea>
-      
-
+      <textarea name="textarea" id="textarea" ></textarea>
+    
       <button class="btn">Submit</button>
+      <p id="errorMessage" style="color: red;"></p>
     </form>
+    <div id="toast">Submission 😊 Successful✔</div>
    </div>
 </body>
 </html>
